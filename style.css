@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:wght@400;800&display=swap');
+
+body{
+    background-color: hsl(218, 23%, 16%);
+    font-family: 'Manrope', sans-serif;
+    display: flex;
+    font-size: 28px;
+    font-family: "Poppins", sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+:root{
+    --blue-200:hsl(193, 38%, 86%);
+    --green-300:hsl(150, 100%, 66%);
+    ---blue:hsl(217, 19%, 38%);
+    --blue-900:hsl(217, 19%, 24%);
+    --blue-950:hsl(218, 23%, 16%);
+}
+
+main{
+    background-color: var(--blue-900);
+    width: 200px;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+h1{
+    color: var(--green-300);
+    font-size: 0.50rem;
+    letter-spacing: 2px;
+    
+}
+
+p{
+    color: var(--blue-200);
+    font-size: .75rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+.divider{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+.divider img{
+    width: 100%;
+}
+
+button{
+    background-color: var(--green-300);
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    cursor: pointer;
+    bottom: -18px;
+    left: 102px;
+    
+
+}
+
+button img{
+    width: 15px;
+    
+}
+
+@media (max-width: 400px) {
+    main {
+        width: 80%;
+        
+    }
+
+    button {
+        left: 145px;
+        width:52px;
+        height: 52px;
+
+    
+    }
+
+    button img{
+    width: 20px;
+    
+}
+
+.divider{
+    margin-bottom: 30px;
+}
+
+p {
+    font-size: 1rem;
+}
+
+h1{
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+
+
+}
+
+
