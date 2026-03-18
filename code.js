@@ -7,7 +7,7 @@ async function getAdvice() {
     // Prevent the browser and the API gateway from returning a cached slip
     const response = await fetch(`https://api.adviceslip.com/advice?cache-buster=${Date.now()}`);
     const data = await response.json();
-
+    console.log(data);
     adviceId.textContent = ` #${data.slip.id}`;
     adviceText.textContent = data.slip.advice;
 
